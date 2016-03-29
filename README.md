@@ -1,2 +1,2 @@
-# mareks-space.github.io
-Super minimalistic personal website
+# Marek Dlugos personal web site
+Super minimalistic personal website - check out www.mareks.space
