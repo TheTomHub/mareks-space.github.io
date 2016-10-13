@@ -1,0 +1,39 @@
+doctype
+html(lang="en")
+  head
+
+    meta(charset='UTF-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    
+    title=title
+    meta(name="description" content="#{ description }")
+    
+    meta(name='keywords', content='marek dlugos, design, startup, hostmeinca')
+    meta(name='author', content='Marek Dlugos')
+    meta(name='copyright', content='© 2347, Marek Dlugos. All rights reserved.')
+    meta(name='robots', content='index, follow')
+    
+    link(rel="stylesheet" href="css/main.css")
+    
+    script(src="/javascripts/jquery.js")
+    script(src="/javascripts/app.js")
+    
+    script(src="https://use.typekit.net/wxb1mxr.js")
+    script try{Typekit.load({ async: true });}catch(e){}
+    
+    // Google Analytics
+    // Facebook Sharing
+    // Twitter Sharing
+    
+  body
+    #wrapper
+      header
+        .container
+          != partial("_shared/nav")
+      main
+        .container
+          != yield
+      footer
+        .container
+          != partial("_shared/footer")

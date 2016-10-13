@@ -1,0 +1,357 @@
+// *******************************
+// ========== PARTIALS ===========
+// *******************************
+
+@import "normalize";
+@import "grid";
+@import "https://fonts.googleapis.com/css?family=Arvo|Source+Sans+Pro";
+
+// *******************************
+// ========== VARIABLES ==========
+// *******************************
+
+$black: #111517;
+$grey: lighten(#000, 60);
+$brand: #02C39A;
+
+$heading: "bebas-neue";
+$text: "Source Sans Pro", "Proxima Nova", "Helvetica Neue", Verdana, Arial, sans-serif;
+
+// *******************************
+// ========== GLOBAL =============
+// *******************************
+
+.clear, .cleaner, .clean {
+  clear: both;
+}
+
+body {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  background: #f4f4f4;
+  font-family: $text;
+  font-size: 18px;
+  line-height: 1.3;
+}
+
+div#wrapper {
+  margin: 0 auto;
+  background: #FFF;
+  max-width: 1920px;
+}
+
+.container {
+  // max-width: 960px;
+}
+
+// *******************************
+// ========== TYPOGRAPHY =========
+// *******************************
+
+a {
+  color: $brand;
+  transition: all .3 ease-out;
+
+  &:hover {
+    color: darken($brand, 10);
+  }
+}
+
+a.text {
+  color: $brand;
+  display: inline-block;
+  font-family: $text;
+  padding-bottom: 0px;
+  position: relative;
+  text-decoration: none;
+}
+
+a.text:before {
+  bottom: 0;
+  content: '';
+  display: block;
+  height: 1px;
+  left: 0;
+  position: absolute;
+  transition: width 0s ease;
+  width: 100%;
+}
+
+a.text:after {
+  background: $brand;
+  bottom: 0;
+  content: '';
+  display: block;
+  height: 1px;
+  position: absolute;
+  right: 0;
+  transition: width .5s ease;
+  width: 100%;
+}
+
+a.text:hover:before {
+  background: $brand;
+  transition: width .5s ease;
+  width: 0%;
+}
+
+a.text:hover:after {
+  background: transparent;
+  transition: width 0s ease;
+  width: 0%;
+}
+
+ul,
+ol {
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+h4 a {
+  text-decoration: none;
+  color: $black;
+
+  &:hover {
+    border-bottom: 1px solid $black;
+    color: $black;
+    text-decoration: none;
+  }
+}
+
+h2 {
+  font-family: $heading;
+  letter-spacing: 1px;
+  font-size: 3.3em;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-size: 1.8em;
+  margin-top: 2em;
+  letter-spacing: 1px;
+
+  &:first-child {
+    margin-top: 0;
+  }
+}
+h4 {
+  font-size: 1.3em;
+}
+h5 {
+  font-size: 1em;
+}
+h6 {
+  font-size: 0.8em;
+  margin-bottom: 0.2em;
+  margin-top: 0.2em;
+}
+
+p {
+  font-size: 0.85em;
+  line-height: 1.5;
+  font-weight: normal;
+  font-family: $text;
+}
+
+// *******************************
+// ========== HEADER =============
+// *******************************
+
+header {}
+
+nav {
+
+  h1 {
+    display: inline-block;
+    font-weight: normal;
+
+    a {
+      display: inline-block;
+      font-size: 18px;
+      text-decoration: none;
+      transition: color .2s ease-out;
+      color: lighten(#000, 50);
+
+      &:hover {
+        color: $black;
+        text-decoration: none;
+      }
+    }
+  }
+
+  ul {
+    float: right;
+    list-style-type: none;
+    overflow: hidden;
+    margin-top: 20px;
+
+    li {
+      float: left;
+
+      a{
+        display: inline-block;
+        color: $grey;
+        font-weight: 500;
+        text-align: center;
+        padding: 14px 30px;
+        font-size: 14px;
+        text-decoration: none;
+        transition: 0.3s;
+
+        &:hover {
+          color: $black;
+          text-decoration: none;
+        }
+      }
+
+      &.active a {
+        color: $black;
+      }
+    }
+    //
+    // li:last-child {
+    //   a {
+    //     padding-right: 0;
+    //   }
+    // }
+  }
+}
+
+// *******************************
+// ========== MAIN ===============
+// *******************************
+
+main {
+
+  section {
+    margin-top: 40px;
+    // border-bottom: 1px solid #e9e9e9;
+    // padding-bottom: 40px;
+  }
+
+  ul.dashed {
+    list-style: none;
+    padding-left: 0;
+
+    & > li {
+      margin-left: 15px;
+    }
+
+    & > li:before {
+        content: "—";
+        color: #999;
+        margin-left: -15px;
+        margin-right: 10px;
+    }
+  }
+
+  ul.blocks {
+    list-style: none;
+
+    li {
+      margin-top: 30px;
+    }
+  }
+
+  ul.small-text {
+    font-size: 0.8em;
+    padding-left: 40px;
+    line-height: 1.6;
+
+    li {
+      margin-top: 0;
+    }
+  }
+
+  ul.text-list {
+    padding-left: 20px !important;
+    font-size: 0.9em;
+    padding-left: 40px;
+    line-height: 1.6;
+
+    li {
+      margin-top: 0;
+    }
+  }
+
+  ul.no-padding {
+    padding: 0;
+  }
+
+  ul.big,
+  dl {
+    list-style: none;
+    padding: 0;
+    font-size: 1em;
+    line-height: 2.2;
+  }
+
+  dl {
+    margin-top: 1.5em;
+  }
+
+  dt {
+    line-height: 1;
+  }
+
+  dd {
+    font-size: 0.7em;
+    margin: 0;
+    margin-bottom: 5px;
+  }
+
+  .big-margin {
+    margin-top: 150px;
+    margin-bottom: 150px;
+  }
+
+  .medium-margin {
+    margin-top: 40px;
+  }
+
+  .bigger-line-height {
+    line-height: 2;
+  }
+}
+
+// *******************************
+// ========== FOOTER =============
+// *******************************
+
+footer {
+  border-top: 1px solid #e6e6e6;
+  margin-top: 50px;
+  padding-bottom: 55px;
+  padding-top: 70px;
+
+  h6 {
+    display: block;
+  }
+
+  span {
+    display: block;
+  }
+
+  p {
+    clear: both;
+  }
+
+  ul {
+    padding-left: 0;
+    list-style: none;
+
+    li {
+      margin-top: 2em;
+    }
+  }
+}

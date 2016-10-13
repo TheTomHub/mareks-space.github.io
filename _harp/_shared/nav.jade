@@ -1,0 +1,15 @@
+nav
+  h1(class="#{ current.source == 'index' ? 'active' : '' }")
+    a(href="/") Marek Dlugos
+  ul
+    li(class="#{ current.source == 'doing' ? 'active' : '' }")
+      a(href="/doing") Doing
+    li(class="#{ current.source == 'side-projects' ? 'active' : '' }")
+      a(href="/side-projects") Side Projects
+    li(class="#{ current.source == 'education-awards' ? 'active' : '' }")
+      a(href="/education-awards") Education &amp; Awards
+    li(class="#{ current.source == 'hobbies' ? 'active' : '' }")
+      a(href="/hobbies") Hobbies
+    li(class="#{ current.source == 'sharing' ? 'active' : '' }")
+      a(href="/sharing") Sharing
+  div.clear
