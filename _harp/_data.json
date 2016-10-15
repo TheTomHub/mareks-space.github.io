@@ -1,10 +1,37 @@
 {
   "index": {
-    "title": "Marek Dlugos - Personal digital playground",
-    "description": "I’m awesome and so are you"
+    "title": "Marek Dlugos - Entrepreneurial mind — Personal website",
+    "description": "An Entrepreneurial Mind focusing on digital products. Personal website containing all of the information and previous work.",
+    "keywords": "marek, dlugos, marek dlugos, digital product designer, startups"
+  },
+  "doing": {
+    "title": "Skill & Work Experience — Marek Dlugos — Personal website",
+    "description": "During the years I have gained skills in design, programming and product management working for companies with large impact all around the world.",
+    "keywords": "design, code, product, marek, dlugos, marek dlugos"
+  },
+  "side-projects": {
+    "title": "Side Projects — Marek Dlugos — Personal website",
+    "description": "Been driven by passion for improving things around me and people's lives that led me to creating side project.",
+    "keywords": "projects, hostmeinca, marek, dlugos, marek dlugos"
+  },
+  "education-awards": {
+    "title": "Education & Awards — Marek Dlugos — Personal website",
+    "description": "List of awards and greatest educational instituties accross the world that I had opportunity to attend.",
+    "keywords": "cambridge, spse, cvut, marek, dlugos, marek dlugos"
+  },
+  "hobbies": {
+    "title": "Hobbies — Marek Dlugos — Personal website",
+    "description": "Photography, video, traveling, fashion, ballroom dancing and basketball are perfect for being offline.",
+    "keywords": "photography, video, fashion, basketball, ballroom dancing, marek dlugos"
+  },
+  "sharing": {
+    "title": "Sharing - Marek Dlugos — Personal website",
+    "description": "Marek Dlugos is constantly sharing on his social media, writing on Medium, speaking or ",
+    "keywords": "social media, press, writing, speaking, marek dlugos"
   },
   "404": {
-    "title": "Welcome to my about page",
-    "description": "I’m awesome and so are you"
+    "title": "Whoops! Something went wrong.",
+    "description": "Whoops! I can not find page that you are looking for.",
+    "keywords": "broken, marek dlugos, not found"
   }
 }
