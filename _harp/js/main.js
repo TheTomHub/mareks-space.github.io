@@ -1,8 +1,8 @@
-function myFunction() {
-    var x = document.getElementById("myTopnav");
-    if (x.className === "topnav") {
-        x.className += " responsive";
-    } else {
-        x.className = "topnav";
-    }
-}
+jQuery(document).ready(function($) {
+    $('a').not('[href*="mailto:"]').each(function () {
+		var isInternalLink = new RegExp('/' + window.location.host + '/');
+		if ( ! isInternalLink.test(this.href) ) {
+			$(this).attr('target', '_blank');
+		}
+	});
+});
