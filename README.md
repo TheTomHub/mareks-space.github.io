@@ -1,2 +1,7 @@
 # Marek Dlugos personal web site
-Super-minimalistic personal website - check out www.mareks.space
+www.mareks.space
+
+## Usage & deployment
+1. `harp server`
+2. `harp compile _harp ./`
+3. Push to Github
