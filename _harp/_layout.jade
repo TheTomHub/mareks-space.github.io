@@ -48,7 +48,7 @@ html(lang="en")
     meta(name="twitter:image" content="http://www.mareks.space/images/og-image.jpg")
     
   body(class="#{ current.source == 'index' ? 'fade-in' : '' }")
-    #wrapper
+    #wrapper(class="#{ current.source == 'index' ? 'extend-height' : '' }")
       header
         .container
           != partial("_shared/nav")
