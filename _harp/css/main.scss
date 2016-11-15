@@ -44,11 +44,9 @@ body {
             animation: fadein 2s;
 }
 
-// @media (min-width: 768px) {
-  .extend-height {
-    min-height: 100vh;
-  }
-// }
+.extend-height {
+  min-height: 100vh;
+}
 
 div#wrapper {
   margin: 0 auto;
