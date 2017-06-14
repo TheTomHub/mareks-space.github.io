@@ -1,17 +1,27 @@
-- var filter = /(\.html$)/;
-- var replace = /(\.html$)|(^index\.html$)/;
-
-mixin tree(head, tail)
-  for val, key in head
-    if key !== '.git' && key !== '_data'
-      if key == '_contents'
-        each file in val
-          if filter.test(file) && !/^404\.html/.test(file)
-            - file = file.replace(replace, "");
-            li: a(href="#{ tail + file }")= tail + file
-      else
-        mixin tree(val, tail + key + "/")
-
-h1 Sitemap
-ul
-  mixin tree(public, "/")
+section.row
+  .col-md-3
+    h2 Sitemap
+  .col-md-9
+    h3 Main Structure
+    ul
+      li
+        a(href="http://www.mareks.space/") Marek Dlugos — Personal Website
+      li
+        a(href="http://www.mareks.space/doing") Doing
+      li
+        a(href="http://www.mareks.space/side-projects") Side Projects
+      li
+        a(href="http://www.mareks.space/education-awards") Education &amp; Awards
+      li
+        a(href="http://www.mareks.space/hobbies") Hobbies
+      li
+        a(href="http://www.mareks.space/sharing") Sharing
+        
+    h3 Non published pages yet
+    ul
+      li 
+        a(href="http://www.mareks.space/failures") Failures
+      li 
+        a(href="http://www.mareks.space/reading-list") Reading List
+      li 
+        a(href="http://www.mareks.space/thanks-list") Thanks List
