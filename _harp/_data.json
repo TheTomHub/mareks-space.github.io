@@ -1,4 +1,7 @@
 {
+  "sitemap.xml": {
+		"layout": false
+	},
   "index": {
     "title": "Marek Dlugos - Digital Product Designer — Personal website",
     "description": "Marek Dlugos — Digital Product Designer with background in Software Engineering. Personal website containing all of the information and previous work.",
