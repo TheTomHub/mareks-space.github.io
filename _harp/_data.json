@@ -1,4 +1,7 @@
 {
+  "robots.txt": {
+    "layout": false
+  },
   "sitemap.xml": {
 		"layout": false
 	},
