@@ -382,9 +382,20 @@ footer {
 
 @media (max-width: 768px) {
 
+  body {
+    width: 100%;
+  }
+
+  h1.big {
+    font-size: 36px;
+  }
+
+  .big-margin{
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+  }
+
   nav {
-    padding-left: 25px;
-    padding-right: 25px;
 
     h1 {
       text-align: center;
@@ -397,6 +408,13 @@ footer {
       li {
         a {
           padding: 14px 13px 14px 13px;
+          text-decoration: underline;
+          background: hsl(0, 0%, 98%);
+        }
+      }
+      li.active {
+        a {
+          background: hsl(0, 0%, 94%);
         }
       }
     }
