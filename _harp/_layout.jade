@@ -11,7 +11,7 @@ html(lang="en")
     meta(name="keywords" content="#{ keywords }")
     
     meta(name="author" content="Marek Dlugos")
-    meta(name="copyright" content="© 2017, Marek Dlugos. All rights reserved.")
+    meta(name="copyright" content="© 2020, Marek Dlugos. All rights reserved.")
     meta(name="robots" content="index, follow, noodp")
     
     meta(name="googlebot" content="index,follow")
@@ -20,22 +20,18 @@ html(lang="en")
     meta(name="abstract" content="Marek Dlugos Personal Website")
     meta(name="rating" content="General")
     
-    link(rel="author" href="humans.txt")
     link(rel="me" href="https://www.facebook.com/marek.dlugos" type="text/html")
     link(href="/images/favicon.png" rel="icon" type="image/png")
     link(rel="stylesheet" href="css/main.css")
     
-    script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js")
     script(src="js/main.js")
     script(src="js/analytics.js")
-    script(src="https://use.typekit.net/wxb1mxr.js")
-    script try{Typekit.load({ async: true });}catch(e){}
 
     meta(property="og:type" content="website")
     meta(property="og:url" content="http://www.marekdlugos.com/")
-    meta(property="og:title" content="Marek Dlugos — An Entrepreneurial Mind")
+    meta(property="og:title" content="Marek Dlugos — Personal Website")
     meta(property="og:image" content="http://www.marekdlugos.com/images/og-image.jpg")
-    meta(property="og:description" content="Focusing on digital products. Personal website containing all of the information and previous work.")
+    meta(property="og:description" content="Personal website of Marek Dlugos — Helping companies to succeed. Background in revenue growth, product, design, and software engineering.")
     meta(property="og:site_name" content="Marek Dlugos — Personal website")
     meta(property="og:locale" content="en_US")
     
@@ -44,17 +40,16 @@ html(lang="en")
     meta(name="twitter:creator" content="@marekdlugos")
     meta(name="twitter:url" content="http://www.marekdlugos.com/")
     meta(name="twitter:title" content="Marek Dlugos — An Entrepreneurial Mind")
-    meta(name="twitter:description" content="Focusing on digital products. Personal website containing all of the information and previous work.")
+    meta(name="twitter:description" content="Personal website of Marek Dlugos — Helping companies to succeed. Background in revenue growth, product, design, and software engineering.")
     meta(name="twitter:image" content="http://www.marekdlugos.com/images/og-image.jpg")
     
-  body(class="#{ current.source == 'index' ? 'fade-in' : '' }")
-    #wrapper(class="#{ current.source == 'index' ? 'extend-height' : '' }")
-      header
-        .container
-          != partial("_shared/nav")
-      main
-        .container
-          != yield
-      footer
-        .container
-          != partial("_shared/footer")
+  body()
+    header
+      .container
+        != partial("_shared/nav")
+    main
+      .container
+        != yield
+    footer
+      .container
+        != partial("_shared/footer")
