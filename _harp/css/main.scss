@@ -47,4 +47,53 @@ h4 {}
 
 h5 {}
 
+a {
+  text-decoration: none;
+}
+
 a.link {}
+
+// *******************************
+// ========== HEADER =============
+// *******************************
+
+header nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 16px;
+}
+
+header h1 a {
+  font-size: 16px;
+  font-weight: 500;
+  padding: 10px;
+  color: #000000;
+}
+
+header ul {
+  padding-left: 0;
+  margin-left: auto;
+}
+
+header ul li {
+  display: inline-block;
+  margin-left: 50px;
+}
+
+header ul li a {
+  font-size: 16px;
+  font-weight: 500;
+  padding: 10px;
+  color: #000000;
+}
+
+// *******************************
+// ========== FOOTER =============
+// *******************************
